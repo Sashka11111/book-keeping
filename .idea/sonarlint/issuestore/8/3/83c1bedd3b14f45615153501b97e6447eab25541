@@ -1,0 +1,9 @@
+
+U
+java:S1118":Add a private constructor to hide the implicit public one.(Ø‡ÜÛüÿÿÿÿ
+B
+java:S3011",This accessibility update should be removed.(˜ÂÓ˜
+a
+java:S6201"FReplace this instanceof check and cast with 'instanceof String string'(èåúşÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(¬ˆ­–
+E	java:S106""+Replace this use of System.out by a logger.(‚é€Şûÿÿÿÿ

@@ -1,0 +1,21 @@
+
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ššëò8ğ¼§×1
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…Â8ğ¼§×1
+m	java:S117)"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ššëò8ğ¼§×1
+o
+java:S3008"RRename this field "Reviews" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ıûå8ğ¼§×1
+E	java:S106"+Replace this use of System.out by a logger.(®ÄŞÿÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(àíêÿÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(×‘ĞÈ
+E	java:S106"+Replace this use of System.out by a logger.(±Êªœıÿÿÿÿ
+@	java:S106 "+Replace this use of System.out by a logger.(ŠÀš¡
+E	java:S106!"+Replace this use of System.out by a logger.(”›ŞÉüÿÿÿÿ
+E	java:S106""+Replace this use of System.out by a logger.(Í¼ˆŠúÿÿÿÿ
+@	java:S106-"+Replace this use of System.out by a logger.(é†·
+E	java:S106/"+Replace this use of System.out by a logger.(ğÊÊ¶ùÿÿÿÿ
+E	java:S1062"+Replace this use of System.out by a logger.(ëÚƒùÿÿÿÿ
+E	java:S1065"+Replace this use of System.out by a logger.(‡Û´àøÿÿÿÿ
+@	java:S106F"+Replace this use of System.out by a logger.(´ÕÙÎ
+E	java:S106H"+Replace this use of System.out by a logger.(¤”Œ¯ûÿÿÿÿ
+H
+java:S1068"+Remove this unused "Reviews" private field.(½ıûå8­ğ¼§×1
