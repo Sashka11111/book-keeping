@@ -1,0 +1,21 @@
+
+¡
+java:S4165"`Remove this useless assignment; "id" already holds the assigned value along all execution paths.(£©èÚþÿÿÿÿJ$9b031a10-9dd4-4d28-9d4b-d13b5f009d9b
+Ÿ
+java:S4165"cRemove this useless assignment; "title" already holds the assigned value along all execution paths.(¦žÓ×J$5ddf2fd5-504e-413f-bd9f-19b67908ffb3
+§
+java:S4165"fRemove this useless assignment; "category" already holds the assigned value along all execution paths.(¢ïº£ýÿÿÿÿJ$f34e94c5-7826-4afb-8bf4-35e53fd367d0
+Ÿ
+java:S4165"dRemove this useless assignment; "author" already holds the assigned value along all execution paths.(‹·³(J$0e69310a-66c3-4c9b-ae54-785864356888
+¬
+java:S4165"kRemove this useless assignment; "yearPublished" already holds the assigned value along all execution paths.(¡»’ìÿÿÿÿÿJ$ea191845-de22-4063-a705-1a38971f691b
+j
+java:S1656"/Remove or correct this useless self-assignment.(‹·³(J$85de9537-2fea-4b2f-aed8-167b879371e2
+p
+java:S1656"/Remove or correct this useless self-assignment.(¡»’ìÿÿÿÿÿJ$ae0f71a0-09f5-405d-88a7-12b01f1b052c
+p
+java:S1656"/Remove or correct this useless self-assignment.(£©èÚþÿÿÿÿJ$ad1806ce-16b8-4b29-b652-52fac88e7fae
+k
+java:S1656"/Remove or correct this useless self-assignment.(¦žÓ×J$5b648a51-c804-4b14-b862-602b25e45497
+p
+java:S1656"/Remove or correct this useless self-assignment.(¢ïº£ýÿÿÿÿJ$88e18d3b-97c9-48cf-81f0-724a930a0fda

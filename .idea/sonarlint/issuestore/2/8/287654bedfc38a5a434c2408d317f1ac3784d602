@@ -1,9 +1,10 @@
 
 œ
-java:S1186?"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯´¯Ïüÿÿÿÿ
-@	java:S106"+Replace this use of System.out by a logger.(š·€š
-@	java:S106 "+Replace this use of System.out by a logger.(ÚÎõ
-?	java:S106#"+Replace this use of System.out by a logger.(ç—ô*
-E	java:S1066"+Replace this use of System.out by a logger.(š¦¯ùÿÿÿÿ
-E	java:S1068"+Replace this use of System.out by a logger.(ïõøøüÿÿÿÿ
-E	java:S106;"+Replace this use of System.out by a logger.(æÍÜ†şÿÿÿÿ
+java:S3012"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(¡Òö„8æ€Å‘ÿ1J$3b7103eb-0aa2-42fc-8b89-e7b77bca082b
+m	java:S106!"+Replace this use of System.out by a logger.(©€˜ö8ç€Å‘ÿ1J$9a287983-ff3b-47d3-84e4-aa27a44e7270
+m	java:S106("+Replace this use of System.out by a logger.(š·€š8ë€Å‘ÿ1J$039b104a-a945-4e79-b304-433a3d0893af
+m	java:S106/"+Replace this use of System.out by a logger.(ÚÎõ8ì€Å‘ÿ1J$6823df66-7097-48a3-a24c-1a5d1fda3caf
+l	java:S1062"+Replace this use of System.out by a logger.(ç—ô*8í€Å‘ÿ1J$5af36235-4da2-4221-a50a-9f8f5584f2a2
+r	java:S106<"+Replace this use of System.out by a logger.(š¦¯ùÿÿÿÿ8ï€Å‘ÿ1J$6c3f6f21-52fe-44a9-ba80-416fbc148358
+r	java:S106>"+Replace this use of System.out by a logger.(ïõøøüÿÿÿÿ8ï€Å‘ÿ1J$703066c2-7645-4cf9-9899-799589b3f272
+r	java:S106A"+Replace this use of System.out by a logger.(æÍÜ†şÿÿÿÿ8ğ€Å‘ÿ1J$8a83a456-8ea3-4b85-ad00-d04b86fea3b2

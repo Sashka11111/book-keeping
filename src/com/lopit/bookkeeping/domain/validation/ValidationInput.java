@@ -1,9 +1,18 @@
-package com.lopit.bookkeeping.validation;
+package com.lopit.bookkeeping.domain.validation;
 
 import java.util.Scanner;
 
+/**
+ * Утилітний клас для валідації та обробки вводу користувача.
+ */
 public class ValidationInput {
 
+  /**
+   * Перевіряє, чи всі введені значення є числовими.
+   *
+   * @param inputs Масив вхідних рядків.
+   * @return true, якщо всі введення є числовими, інакше false.
+   */
   public static boolean checkNumericInput(String[] inputs) {
     for (String input : inputs) {
       if (!input.trim().matches("-?\\d+(\\.\\d+)?")) {
@@ -13,7 +22,12 @@ public class ValidationInput {
     return true;
   }
 
-  // Метод для отримання від користувача правильного числового вводу типу double
+  /**
+   * Запитує у користувача правильне числове значення типу double.
+   *
+   * @param scanner Об'єкт Scanner для зчитування вводу користувача.
+   * @return Правильне числове значення типу double, введене користувачем.
+   */
   public static double getValidDoubleInput(Scanner scanner) {
     double input;
     while (true) {
@@ -27,7 +41,12 @@ public class ValidationInput {
     return input;
   }
 
-  // Метод для отримання від користувача правильного числового вводу типу int
+  /**
+   * Запитує у користувача правильне числове значення типу int.
+   *
+   * @param scanner Об'єкт Scanner для зчитування вводу користувача.
+   * @return Правильне числове значення типу int, введене користувачем.
+   */
   public static int getValidIntInput(Scanner scanner) {
     int input;
     while (true) {
@@ -40,4 +59,17 @@ public class ValidationInput {
     }
     return input;
   }
+  public static String getValidPhoneInput(Scanner scanner) {
+    String input;
+    while (true) {
+      input = scanner.nextLine().trim();
+      if (input.matches("^\\+[0-9]+$")) {
+        break; // Правильний ввід, виходимо з циклу
+      } else {
+        System.out.println("Неправильний формат номеру телефону. Почніть номер з + та введіть цифри без пробілів.");
+      }
+    }
+    return input;
+  }
+
 }

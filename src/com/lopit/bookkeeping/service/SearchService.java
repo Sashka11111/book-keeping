@@ -1,32 +1,36 @@
-package src.com.liamtseva.cookbook.service;
+package com.lopit.bookkeeping.service;
 
-import com.liamtseva.cookbook.model.Recipes;
-import com.liamtseva.cookbook.model.ValidationInput;
+import com.lopit.bookkeeping.domain.model.Book;
+import com.lopit.bookkeeping.domain.validation.ValidationInput;
 import java.util.List;
 import java.util.Scanner;
 
 public class SearchService {
 
-  private static final String RECIPES_FILE_PATH = "Data/recipes.json";
+  private static final String BOOK_FILE_PATH = "Data/books.json";
 
   public static void searchService() {
     Scanner scanner = new Scanner(System.in);
-    System.out.println("Введіть ID рецепта:");
-    int searchId = ValidationInput.getValidIntInput(scanner);
+    System.out.println("Введіть назву книги:");
+    String searchTitle = scanner.nextLine();
 
-    List<Recipes> recipes = JsonDataReader.modelDataJsonReader(RECIPES_FILE_PATH, Recipes[].class);
+    List<Book> books = JsonDataReader.modelDataJsonReader(BOOK_FILE_PATH, Book[].class);
 
-    for (Recipes recipe : recipes) {
-      if (recipe.getRecipesId() == searchId) {
-        System.out.println("ID рецепту: " + recipe.getRecipesId());
-        System.out.println("Інгредієнти: " + recipe.getIngredient());
-        System.out.println("Назва: " + recipe.getName());
-        System.out.println("Категорія: " + recipe.getCategory());
-        System.out.println("Інструкція: " + recipe.getInstruction());
-        System.out.println("Час готування: " + recipe.getCookingTime());
+    boolean found = false;
+    for (Book book : books) {
+      // Перевіряємо, чи назва книги співпадає з введеною назвою (ігноруючи регістр)
+      if (book.getTitle().equalsIgnoreCase(searchTitle)) {
+        System.out.println("Назва книги: " + book.getTitle());
+        System.out.println("Автор: " + book.getAuthor());
+        System.out.println("Категорія: " + book.getCategory());
+        System.out.println("Рік видання: " + book.getYearPublished());
         System.out.println("");
-        break;
+        found = true;
       }
+    }
+
+    if (!found) {
+      System.out.println("Книга з назвою \"" + searchTitle + "\" не знайдена.");
     }
   }
 }

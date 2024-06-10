@@ -1,12 +1,12 @@
 
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êŒ–ƒùÿÿÿÿ8ÙåÑ§×1
-U
-java:S1118":Add a private constructor to hide the implicit public one.(©°ö¼üÿÿÿÿ
-@	java:S106"+Replace this use of System.out by a logger.(¯ ÒÎ
-@	java:S106"+Replace this use of System.out by a logger.(íÕ§Œ
-E	java:S106"+Replace this use of System.out by a logger.(º×™½úÿÿÿÿ
-@	java:S106"+Replace this use of System.out by a logger.(Åáßº
-@	java:S106"+Replace this use of System.out by a logger.(îãåù
-E	java:S106"+Replace this use of System.out by a logger.(Ù¹×‘ûÿÿÿÿ
-@	java:S106"+Replace this use of System.out by a logger.(¡‘ñ£
-E	java:S106"+Replace this use of System.out by a logger.(ŞÒ—üÿÿÿÿ
+{
+java:S1118":Add a private constructor to hide the implicit public one.(©°ö¼üÿÿÿÿJ$16cad4ad-33a8-4bba-b831-95a0f8a32f03
+k	java:S106"+Replace this use of System.out by a logger.(óÁ¢˜øÿÿÿÿJ$30b0d77e-cd18-4c38-9f67-3968cba4365d
+r	java:S106"+Replace this use of System.out by a logger.(İ‰İ»ûÿÿÿÿ8ú¡«ìÿ1J$d0354a72-eff3-48be-bd48-b1f735da185b
+r	java:S106"+Replace this use of System.out by a logger.(ÖûŒ£ùÿÿÿÿ8ú¡«ìÿ1J$71876cb4-b91e-465a-8107-85980f359451
+m	java:S106"+Replace this use of System.out by a logger.(îãåù8ü¡«ìÿ1J$ba8a462f-06b7-4d0f-b7c6-eba2f0569231
+r	java:S106"+Replace this use of System.out by a logger.(—ü³øÿÿÿÿ8ü¡«ìÿ1J$b143f03e-11dc-482a-8814-7784de90dbb3
+r	java:S106"+Replace this use of System.out by a logger.(ŞÒ—üÿÿÿÿ8ü¡«ìÿ1J$a0789dad-e7ef-4f49-804e-ea20bf9f9779
+m	java:S106!"+Replace this use of System.out by a logger.(Œ¯Òõ8ü¡«ìÿ1J$075e9d2c-cd57-4ed1-b644-8f678201091e
+œ
+java:S1128"TRemove this unused import 'com.lopit.bookkeeping.domain.validation.ValidationInput'.(ÃÔ ›úÿÿÿÿ8ı¡«ìÿ1J$00745650-6c6a-47f4-9dd4-ad04c11fa099

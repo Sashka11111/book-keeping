@@ -1,9 +1,8 @@
-package src.com.liamtseva.cookbook.service;
-
+package com.lopit.bookkeeping.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import com.liamtseva.cookbook.model.User;
+import com.lopit.bookkeeping.domain.model.User;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,12 +11,27 @@ import java.util.Scanner;
 
 public class UserService {
 
-  private static final String USER_FILE_PATH = "Data/user.json";
+  private static final String USERS_FILE_PATH = "Data/users.json";
 
   private final List<User> users;
 
   public UserService() {
     this.users = new ArrayList<>();
+    // Ініціалізація з існуючого файлу JSON (якщо потрібно)
+    loadUsersFromJson();
+  }
+
+  private void loadUsersFromJson() {
+    try {
+      ObjectMapper objectMapper = new ObjectMapper();
+      User[] usersArray = objectMapper.readValue(new File(USERS_FILE_PATH), User[].class);
+      for (User user : usersArray) {
+        users.add(user);
+      }
+    } catch (IOException e) {
+      e.printStackTrace();
+      System.out.println("Помилка при завантаженні користувачів: " + e.getMessage());
+    }
   }
 
   public static void updateUserInMenu() {
@@ -40,18 +54,9 @@ public class UserService {
       userToUpdate.setEmail(newEmail);
 
       try {
-        List<User> users = JsonDataReader.modelDataJsonReader(USER_FILE_PATH, User[].class);
-        for (User user : users) {
-          if (user.getUsername().equals(username)) {
-            user.setPassword(newPassword);
-            user.setEmail(newEmail);
-            break;
-          }
-        }
-
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-        objectMapper.writeValue(new File(USER_FILE_PATH), users);
+        objectMapper.writeValue(new File(USERS_FILE_PATH), userService.getAllUsers().toArray(new User[0]));
         System.out.println("Дані користувача успішно оновлені та збережені.");
       } catch (IOException e) {
         System.out.println("Помилка при збереженні оновлених даних користувача: " + e.getMessage());
@@ -61,47 +66,39 @@ public class UserService {
     }
   }
 
-  public static void saveUserData(User user) {
-  }
-
-
   public void createUser(User user) {
     users.add(user);
+    saveUsersToJson();
   }
 
   public List<User> getAllUsers() {
     return new ArrayList<>(users);
   }
 
-  // Метод для отримання користувача за ідентифікатором
-  public User getUserById(long userId) {
-    for (User user : users) {
-      if (user.getId().equals(userId)) {
-        return user;
-      }
-    }
-    return null;
-  }
-
-  // Метод для оновлення інформації про користувача
-  public void updateUser(User updatedUser) {
-    for (User user : users) {
-      if (user.getId() == updatedUser.getId()) {
-        // Оновлення інформації про користувача
-        user.setPassword(updatedUser.getPassword());
-        user.setEmail(updatedUser.getEmail());
-        break;
-      }
-    }
-  }
-
   public User getUserByUsername(String username) {
-    List<User> usersJson = JsonDataReader.modelDataJsonReader(USER_FILE_PATH, User[].class);
-    for (User user : usersJson) {
+    for (User user : users) {
       if (user.getUsername().equals(username)) {
         return user;
       }
     }
     return null; // Якщо користувач не знайдений
+  }
+
+  private void saveUsersToJson() {
+    ObjectMapper objectMapper = new ObjectMapper();
+    try {
+      objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(USERS_FILE_PATH), users.toArray(new User[0]));
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
+
+  public void updateUser(User updatedUser) {
+    User user = getUserByUsername(updatedUser.getUsername());
+    if (user != null) {
+      user.setPassword(updatedUser.getPassword());
+      user.setEmail(updatedUser.getEmail());
+      saveUsersToJson();
+    }
   }
 }

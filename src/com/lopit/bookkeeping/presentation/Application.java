@@ -1,7 +1,6 @@
-package com.lopit.bookkeeping.bookkeeping;
+package com.lopit.bookkeeping.presentation;
 
-import com.lopit.bookkeeping.model.User;
-import com.lopit.bookkeeping.view.Menu;
+import com.lopit.bookkeeping.domain.model.User;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,9 +12,9 @@ public class Application {
 
   static {
     // Додати бібліотекаря
-    librariansList.add(new User("librarian1", "password1", "librarian@example.com", 03566,"Бібліотекар"));
+    librariansList.add(new User("librarian1", "password1", "librarian@example.com", "+380968893566","Бібліотекар"));
     // Додати читача
-    readersList.add(new User("sofia", "123456", "sofia@gmail.com", 03566,"Читач"));
+    readersList.add(new User("sofia", "123456", "sofia@gmail.com", "+380968893566","Читач"));
   }
 
   public static void runner() throws IllegalAccessException {

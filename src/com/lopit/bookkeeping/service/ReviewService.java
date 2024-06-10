@@ -2,50 +2,47 @@ package com.lopit.bookkeeping.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import com.liamtseva.cookbook.model.Response;
-import com.liamtseva.cookbook.model.User;
-import com.liamtseva.cookbook.model.ValidationInput;
+import com.lopit.bookkeeping.domain.model.Review;
+import com.lopit.bookkeeping.domain.validation.ValidationInput;
 import java.io.File;
 import java.io.IOException;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
-public class ResponseService {
+public class ReviewService {
 
-  private static final String RESPONSE_FILE_PATH = "Data/response.json";
-  private static List<Response> responses;
+  private static final String REVIEWS_FILE_PATH = "Data/reviews.json";
+  private static List<Review> reviews;
 
   public static void main(String[] args) {
-    List<Response> responses = JsonDataReader.modelDataJsonReader(RESPONSE_FILE_PATH,
-        Response[].class);
-    displayResponses(responses);
+    reviews = JsonDataReader.modelDataJsonReader(REVIEWS_FILE_PATH, Review[].class);
+    displayReviews(reviews);
   }
 
-  public static void displayResponses(List<Response> responses) {
-    if (responses.isEmpty()) {
+  public static void displayReviews(List<Review> reviews) {
+    if (reviews.isEmpty()) {
       System.out.println("Список відгуків порожній.");
     } else {
       System.out.println("Список відгуків:");
-      for (Response response : responses) {
-        System.out.println("ID рецепта: " + response.getbook());
-        System.out.println("Коментар: " + response.getComment());
-        System.out.println("Автор відгука: " + response.getAuthor());
-        System.out.println("Оцінка: " + response.getMark());
+      for (Review review : reviews) {
+        System.out.println("Id відгука: " + review.getId());
+        System.out.println("Книга: " + review.getbook());
+        System.out.println("Коментар: " + review.getComment());
+        System.out.println("Оцінка: " + review.getMark());
         System.out.println(); // Для розділення між записами
       }
     }
   }
 
-  public static void addResponse() {
+  public static void addReview() {
     Scanner scanner = new Scanner(System.in);
-    List<Response> responses = JsonDataReader.modelDataJsonReader(RESPONSE_FILE_PATH,
-        Response[].class);
-
+    reviews = JsonDataReader.modelDataJsonReader(REVIEWS_FILE_PATH, Review[].class);
     // Запитати користувача про дані нового відгуку
     System.out.println("Додавання нового відгуку:");
 
-    System.out.println("Введіть ID рецепту:");
-    int recipeId = ValidationInput.getValidIntInput(scanner);
+    System.out.println("Введіть ID книги:");
+    int bookId = ValidationInput.getValidIntInput(scanner);
 
     System.out.println("Введіть оцінку (від 1 до 5):");
     int mark = ValidationInput.getValidIntInput(scanner);
@@ -53,30 +50,99 @@ public class ResponseService {
     System.out.println("Введіть коментар:");
     String comment = scanner.nextLine();
 
-    Response newResponse = new Response(); // Створюємо новий об'єкт відгуку
+    Review newReview = new Review(); // Створюємо новий об'єкт відгуку
 
-// Встановлюємо властивості відгуку
-    newResponse.setbook(recipeId); // ID рецепту
-    newResponse.setMark(mark); // Оцінка
-    newResponse.setComment(comment); // Коментар
+    // Встановлюємо властивості відгуку
+    int newReviewId = generateUniqueId();
+    newReview.setId(newReviewId);
+    newReview.setbook(bookId); // ID книги
+    newReview.setMark(mark); // Оцінка
+    newReview.setComment(comment); // Коментар
 
-// Додати новий рецепт до списку рецептів
-    responses.add(newResponse);
+    reviews.add(newReview);
+
     // Зберегти оновлені дані у файлі JSON
     try {
       ObjectMapper objectMapper = new ObjectMapper();
       objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-      objectMapper.writeValue(new File(RESPONSE_FILE_PATH), responses);
+      objectMapper.writeValue(new File(REVIEWS_FILE_PATH), reviews);
       System.out.println("Новий відгук додано успішно.");
     } catch (IOException e) {
       System.out.println("Помилка при додаванні нового відгуку: " + e.getMessage());
     }
   }
 
-  // Приклад методу, що отримує поточного користувача
-  private static User getCurrentUser() {
-    // Реалізація логіки для отримання поточного користувача
-    return new User("username", "password", "email",
-        "role"); // Приклад створення нового користувача
+  public static void editReview(int reviewId) {
+    Scanner scanner = new Scanner(System.in);
+
+    for (Review review : reviews) {
+      if (review.getId() == reviewId) {
+        System.out.println("Editing review with ID: " + reviewId);
+        System.out.println("Enter new mark (1 to 5):");
+        int newMark = ValidationInput.getValidIntInput(scanner);
+        System.out.println("Enter new comment:");
+        String newComment = scanner.nextLine();
+
+        // Update review properties
+        review.setMark(newMark);
+        review.setComment(newComment);
+
+        // Save updated reviews to JSON file
+        saveReviewsToJson();
+
+        System.out.println("Review updated successfully.");
+        return;
+      }
+    }
+
+    System.out.println("Review not found with ID: " + reviewId);
   }
+
+  public static void deleteReview(int reviewId) {
+    Iterator<Review> iterator = reviews.iterator();
+    boolean found = false;
+
+    while (iterator.hasNext()) {
+      Review review = iterator.next();
+      if (review.getId() == reviewId) {
+        iterator.remove();
+        found = true;
+        break;
+      }
+    }
+
+    if (found) {
+      // Save updated reviews to JSON file
+      saveReviewsToJson();
+      System.out.println("Review deleted successfully.");
+    } else {
+      System.out.println("Review not found with ID: " + reviewId);
+    }
+  }
+
+  private static void saveReviewsToJson() {
+    try {
+      ObjectMapper objectMapper = new ObjectMapper();
+      objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
+      objectMapper.writeValue(new File(REVIEWS_FILE_PATH), reviews);
+    } catch (IOException e) {
+      System.out.println("Error saving reviews to JSON file: " + e.getMessage());
+    }
+  }
+  // Логіка для генерації унікального ідентифікатора для нового відгуку, що починається з 1 і збільшується на 1 з кожним новим відгуком
+  private static int generateUniqueId() {
+    // Ініціалізуємо локальну змінну, що буде зберігати наступне значення унікального ідентифікатора
+    int nextId = 1;
+
+    // Шукаємо максимальний ідентифікатор серед існуючих відгуків
+    for (Review review : reviews) {
+      // Якщо ідентифікатор поточного відгуку більший за поточне значення nextId, оновлюємо nextId
+      if (review.getId() >= nextId) {
+        nextId = review.getId() + 1; // Збільшуємо на 1
+      }
+    }
+
+    return nextId; // Повертаємо наступне унікальне значення ідентифікатора
+  }
+
 }

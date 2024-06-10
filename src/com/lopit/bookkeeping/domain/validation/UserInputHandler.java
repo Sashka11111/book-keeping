@@ -1,16 +1,24 @@
-package com.lopit.bookkeeping.validation;
+package com.lopit.bookkeeping.domain.validation;
 
 import java.util.Scanner;
 
+/**
+ * Клас для обробки вводу користувача з консолі.
+ */
 public class UserInputHandler {
 
-  private Scanner scanner;
+  private final Scanner scanner;
 
   public UserInputHandler() {
     this.scanner = new Scanner(System.in);
   }
 
-  // Метод для отримання цілочисельного значення від користувача
+  /**
+   * Запитує у користувача введення цілого числа.
+   *
+   * @param prompt Повідомлення, яке буде показано користувачу.
+   * @return Ціле числове значення, введене користувачем.
+   */
   public int promptUserForInteger(String prompt) {
     System.out.print(prompt + ": ");
 
@@ -20,8 +28,7 @@ public class UserInputHandler {
       scanner.next();
     }
     int result = scanner.nextInt();
-    scanner.nextLine();
+    scanner.nextLine(); // Очищуємо буфер сканера
     return result;
   }
-
 }

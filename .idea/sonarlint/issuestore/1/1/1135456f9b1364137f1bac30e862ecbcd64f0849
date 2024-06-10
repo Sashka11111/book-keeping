@@ -1,6 +1,12 @@
 
-@	java:S106"+Replace this use of System.out by a logger.(«¿–
-E	java:S106"+Replace this use of System.out by a logger.(Ïæªéıÿÿÿÿ
-@	java:S106"+Replace this use of System.out by a logger.(ºßŒú
-@	java:S106"+Replace this use of System.out by a logger.(í‚ÃÕ
-E	java:S106"+Replace this use of System.out by a logger.(Í¼ˆŠúÿÿÿÿ
+m	java:S106"+Replace this use of System.out by a logger.(«¿–8À”Ä˜€2J$b015d264-c61b-4443-9ac9-78b06f2a20f6
+r	java:S106"+Replace this use of System.out by a logger.(Ïæªéıÿÿÿÿ8À”Ä˜€2J$dba0149d-2261-4b1c-b239-9d02d84f1e98
+m	java:S106"+Replace this use of System.out by a logger.(ºßŒú8Á”Ä˜€2J$5a062228-75ea-4fc1-ad47-ab922b640d90
+m	java:S106"+Replace this use of System.out by a logger.(í‚ÃÕ8Á”Ä˜€2J$1e262e8f-f251-42de-9688-5a99a9f4d9f6
+r	java:S106"+Replace this use of System.out by a logger.(Í¼ˆŠúÿÿÿÿ8Á”Ä˜€2J$6ef28270-35eb-4fbf-9350-60fd246a8391
+r	java:S1061"+Replace this use of System.out by a logger.(Á„œÑüÿÿÿÿ8Æ”Ä˜€2J$043b0641-0ffa-4de2-969d-06fcf6817ae5
+l	java:S1063"+Replace this use of System.out by a logger.(·õÑ08Æ”Ä˜€2J$018d5125-c08f-43b7-be73-32c7fefc8ff3
+m	java:S106A"+Replace this use of System.out by a logger.(şÂ¸Ğ8Ç”Ä˜€2J$250c94ff-3702-43bf-a155-8a74692d9cb3
+m	java:S106J"+Replace this use of System.out by a logger.(«ÓÂã8×”Ä˜€2J$38dc949b-e1d3-4968-8840-95c424dd4f6c
+œ
+java:S1128"TRemove this unused import 'com.lopit.bookkeeping.domain.validation.ValidationInput'.(ÃÔ ›úÿÿÿÿ8Ù”Ä˜€2J$5c146e8a-6ba3-4e39-a0fa-78f592c43346

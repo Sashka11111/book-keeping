@@ -1,4 +1,4 @@
-package src.com.liamtseva.cookbook.service;
+package com.lopit.bookkeeping.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;

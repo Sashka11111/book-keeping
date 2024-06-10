@@ -1,65 +1,62 @@
-package src.com.liamtseva.cookbook.service;
+package com.lopit.bookkeeping.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.liamtseva.cookbook.cookbook.Application;
-import com.liamtseva.cookbook.model.User;
-import com.liamtseva.cookbook.view.Menu;
-import com.liamtseva.cookbook.view.UserInputHandler;
+import com.lopit.bookkeeping.domain.model.Category;
+import com.lopit.bookkeeping.domain.validation.ValidationInput;
+import com.lopit.bookkeeping.presentation.Application;
+import com.lopit.bookkeeping.domain.model.User;
+import com.lopit.bookkeeping.presentation.Menu;
+
 import java.io.File;
 import java.io.IOException;
-import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class RegistrationService {
+
+  private static final String USERS_FILE_PATH = "Data/users.json";
 
   public static void registration() {
     String username;
     String password;
     String email;
+    String phoneNumber;
+    Scanner scanner = new Scanner(System.in);
+
+    List<User> users = JsonDataReader.modelDataJsonReader(USERS_FILE_PATH, User[].class);
 
     do {
       System.out.println("Введіть логін");
-      Scanner scanner = new Scanner(System.in);
       username = scanner.nextLine();
-      if (Application.users != null && !isLoginUnique(username)) {
+      if (!isLoginUnique(users, username)) {
         System.out.println("Цей логін вже використовується. Виберіть інший.");
       }
-    } while (Application.users != null && !isLoginUnique(username));
+    } while (!isLoginUnique(users, username));
 
     System.out.println("Введіть пароль");
-    password = new Scanner(System.in).nextLine();
+    password = scanner.nextLine();
     System.out.println("Введіть email");
-    email = new Scanner(System.in).nextLine();
+    email = scanner.nextLine();
+    System.out.println("Введіть номер телефону (починайте з +):");
+    phoneNumber = ValidationInput.getValidPhoneInput(scanner);
 
-    // Add a menu for role selection
-    System.out.println("Оберіть роль:");
-    System.out.println("1) Користувач");
-    System.out.println("2) Адмін");
-    int roleChoice = new UserInputHandler().promptUserForInteger("Ваш вибір");
+    String role = "Читач"; // Встановлюємо роль "Читач"
 
-    String role;
-    switch (roleChoice) {
-      case 1:
-        role = "Користувач";
-        break;
-      case 2:
-        role = "Адмін";
-        break;
-      default:
-        role = "Користувач";
-        break;
-    }
+    // Знайти максимальний ID користувача
+    int maxUserId = users.stream()
+        .mapToInt(User::getUserId)
+        .max()
+        .orElse(0);
 
-    User newUser = new User(username, password, email, role);
+    // Новий ID користувача буде на одиницю більше за максимальний
+    int newUserId = maxUserId + 1;
+
+    User newUser = new User(newUserId, username, password, email, phoneNumber, role);
     Application.currentUser = newUser;
 
-    if (Application.users == null) {
-      Application.users = new User[]{};
-    }
-    Application.users = addNewUser(Application.users, newUser);
+    users.add(newUser);
 
-    saveUsersToJson(Application.users,
-        "Data/user.json");
+    saveUsersToJson(users, USERS_FILE_PATH);
 
     System.out.println("Реєстрація пройшла успішно.");
     try {
@@ -69,49 +66,25 @@ public class RegistrationService {
     }
   }
 
-  private static User[] addNewUser(User[] users, User newUser) {
-    User[] newUsers = Arrays.copyOf(users, users.length + 1);
-    newUsers[users.length] = newUser;
-    return newUsers;
-  }
-
-  private static boolean isLoginUnique(String login) {
-    if (Application.users == null) {
-      return true; // If no users, login is unique
-    }
-    for (User existingUser : Application.users) {
+  private static boolean isLoginUnique(List<User> users, String login) {
+    for (User existingUser : users) {
       if (existingUser.getUsername().equals(login)) {
-        return false; // Login is not unique
+        return false; // Логін не унікальний
       }
     }
-    return true; // Login is unique
+    return true; // Логін унікальний
   }
 
-  private static void saveUsersToJson(User[] users, String filePath) {
+  private static void saveUsersToJson(List<User> users, String filePath) {
     ObjectMapper objectMapper = new ObjectMapper();
 
     try {
       File file = new File(filePath);
-      User[] existingUsers;
-
-      if (file.exists()) {
-        // If the file exists, try to deserialize it into an array of users
-        existingUsers = objectMapper.readValue(file, User[].class);
-      } else {
-        // If the file doesn't exist, create an empty array
-        existingUsers = new User[]{};
-      }
-
-      // Concatenate the existing users with the new user
-      User[] updatedUsers = Arrays.copyOf(existingUsers, existingUsers.length + 1);
-      updatedUsers[existingUsers.length] = users[0];
-
-      // Write the updated array back to the file
-      objectMapper.writerWithDefaultPrettyPrinter().writeValue(file, updatedUsers);
-
+      // Записуємо весь список користувачів у файл
+      objectMapper.writerWithDefaultPrettyPrinter().writeValue(file, users);
     } catch (IOException e) {
       e.printStackTrace();
-      // Handle errors during file operations
+      // Обробка помилок під час операцій з файлами
     }
   }
 }

@@ -1,9 +1,16 @@
 
-`	java:S112$"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
-P
-java:S1118":Add a private constructor to hide the implicit public one.(Â¦óî
-E	java:S106"+Replace this use of System.out by a logger.(Á¾éËúÿÿÿÿ
-E	java:S106"+Replace this use of System.out by a logger.(ãÑ™ùÿÿÿÿ
-E	java:S106"+Replace this use of System.out by a logger.(‹æ¡‚üÿÿÿÿ
-@	java:S106 "+Replace this use of System.out by a logger.(¶¸Ÿİ
-@	java:S106'"+Replace this use of System.out by a logger.(óıÈ‘
+	java:S1127"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÑÑ¹’ÿ1J$6de0c608-d5dd-4ac7-97a3-ee05a237c00a
+}
+java:S1118":Add a private constructor to hide the implicit public one.(Â¦óî8Î¡×ŒÛ1J$6b2e5492-28aa-4a73-a83b-0478dd600956
+l	java:S106"+Replace this use of System.out by a logger.(–”äd8ìÑ¹’ÿ1J$30a75b25-3061-4914-9f7a-2c88abc2285b
+m	java:S106"+Replace this use of System.out by a logger.(Ğ›³8ìÑ¹’ÿ1J$8b300cb0-0115-4d14-99d3-32c2d8b25a96
+m	java:S106"+Replace this use of System.out by a logger.(…õÍ’8ìÑ¹’ÿ1J$34ab00c8-a042-44df-af0c-f533254ac7f0
+m	java:S106!"+Replace this use of System.out by a logger.(Å­æƒ8óÑ¹’ÿ1J$6155319b-9fa1-42d0-977d-4187941a99ca
+r	java:S106&"+Replace this use of System.out by a logger.(Á¾éËúÿÿÿÿ8óÑ¹’ÿ1J$5dad5835-af1c-4894-a72f-f8c335c092e2
+r	java:S106)"+Replace this use of System.out by a logger.(ãÑ™ùÿÿÿÿ8ôÑ¹’ÿ1J$350d2dbd-9ceb-4c2e-821b-fdf29af11782
+r	java:S106+"+Replace this use of System.out by a logger.(‹æ¡‚üÿÿÿÿ8ôÑ¹’ÿ1J$ba642f50-a215-422e-9ffe-bf1ba17131ab
+m	java:S1063"+Replace this use of System.out by a logger.(¶¸Ÿİ8ôÑ¹’ÿ1J$9840881f-af43-4252-8db7-6cd26f25f934
+y
+java:S39729"7Move this "if" to a new line or add the missing "else".(œ³¡|8ëÆØëÿ1J$c0c8cb49-8f41-462e-b79d-04b1ba7d9710
+m	java:S106:"+Replace this use of System.out by a logger.(ß¨™÷8ëÆØëÿ1J$d06c9830-a4a8-43a7-8958-0aa58004b5e1
+m	java:S106<"+Replace this use of System.out by a logger.(óıÈ‘8ëÆØëÿ1J$b7fd15d7-fd03-4a6e-9845-64b7b80a0da7

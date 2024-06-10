@@ -1,0 +1,27 @@
+
+}
+java:S1118":Add a private constructor to hide the implicit public one.(¸ıÂê8³üÛ˜€2J$f7f052c2-2a12-42d4-aa9a-8d56d90f19a7
+r	java:S106"+Replace this use of System.out by a logger.(Œ¦üÃüÿÿÿÿ8ºüÛ˜€2J$d479e5a6-9b9f-4cd8-b37f-10606e0caf3c
+r	java:S106"+Replace this use of System.out by a logger.(üèƒóûÿÿÿÿ8ºüÛ˜€2J$3e083f99-6e97-472c-a18f-6a43bb7d2d0f
+r	java:S106"+Replace this use of System.out by a logger.(»…Šªúÿÿÿÿ8»üÛ˜€2J$f718002d-92b8-40f6-a123-a58f740769f5
+l	java:S106'"+Replace this use of System.out by a logger.(Ü·î	8ÍüÛ˜€2J$34473f81-3081-4eb1-835c-628d3e090d40
+r	java:S106+"+Replace this use of System.out by a logger.(ï…ãÜÿÿÿÿÿ8ÎüÛ˜€2J$5a25e93b-9e59-4d23-81e3-e214e379527b
+r	java:S106/"+Replace this use of System.out by a logger.(ÏÆÈşÿÿÿÿ8ÏüÛ˜€2J$6bee308e-6cb0-491f-b2e5-4e9154110b62
+m	java:S1063"+Replace this use of System.out by a logger.(ÉŞ«8ÑüÛ˜€2J$036a56ff-73f3-4a23-a5b1-2bd24147acba
+m	java:S1067"+Replace this use of System.out by a logger.(³êå¬8ÒüÛ˜€2J$4ec266c8-0b78-44d8-ad31-f63a2cbce618
+r	java:S106<"+Replace this use of System.out by a logger.(Ñ¡Èúÿÿÿÿ8ÓüÛ˜€2J$3fed0df9-abc4-41ff-85ac-a72c220b79a6
+r	java:S106>"+Replace this use of System.out by a logger.(ÌØÍˆıÿÿÿÿ8ÕüÛ˜€2J$088e9d23-ecaf-4f11-962a-f599b43d5305
+m	java:S106A"+Replace this use of System.out by a logger.(¬ï®Ö8ÕüÛ˜€2J$5ead85ed-7e8f-4c4e-aaac-eacefd599363
+m	java:S106I"+Replace this use of System.out by a logger.(Úÿé8×üÛ˜€2J$2be7f833-379b-44ba-b267-79d7441e8db1
+r	java:S106K"+Replace this use of System.out by a logger.(’í°Éûÿÿÿÿ8×üÛ˜€2J$d73e5aeb-2e24-4cdb-8b22-8e69969497a2
+r	java:S106N"+Replace this use of System.out by a logger.(¨ì¸Éûÿÿÿÿ8ØüÛ˜€2J$082e71c6-828e-4156-9f6f-f403cac021d4
+m	java:S106W"+Replace this use of System.out by a logger.(¬¶À¹8ÚüÛ˜€2J$871b7e31-8fe0-48ec-9a2a-efd474f58863
+m	java:S106["+Replace this use of System.out by a logger.(€”µƒ8ÛüÛ˜€2J$d6f87c40-b354-49f9-8c4e-1a7d98a4871d
+r	java:S106`"+Replace this use of System.out by a logger.(çäòúúÿÿÿÿ8İüÛ˜€2J$7b5724d4-4570-4dd3-b59a-93058942228d
+r	java:S106b"+Replace this use of System.out by a logger.(ÌØÍˆıÿÿÿÿ8ŞüÛ˜€2J$4c48de37-de3f-41d5-876b-75fae988de3a
+r	java:S106e"+Replace this use of System.out by a logger.(Ç“åÛÿÿÿÿÿ8ŞüÛ˜€2J$f450c04f-ca18-4a22-ae82-2b8db25dff05
+m	java:S106o"+Replace this use of System.out by a logger.(ÒòÑ8ıüÛ˜€2J$407b2fd1-7160-465a-9428-03706cbb6633
+h
+java:S1128"FRemove this unused import 'com.lopit.bookkeeping.domain.model.Review'.(·íûÅşÿÿÿÿ8ÂÜ˜€2
+W
+java:S1068"5Remove this unused "REVIEWS_FILE_PATH" private field.(¬„âãşÿÿÿÿ8ÂÜ˜€2

@@ -1,4 +1,4 @@
-package com.lopit.bookkeeping.domain;
+package com.lopit.bookkeeping.domain.model;
 
 public class Category {
 

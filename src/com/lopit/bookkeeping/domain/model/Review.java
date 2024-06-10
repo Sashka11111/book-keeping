@@ -1,21 +1,21 @@
-package com.lopit.bookkeeping.domain;
+package com.lopit.bookkeeping.domain.model;
 
 public class Review {
 
+  private int id;
   private String comment;
   private int mark;
-  private User author;
   private int book;
-
-  public Review(String comment, int mark, User author) {
-    this.comment = comment;
-    this.mark = mark;
-    this.author = author;
-    this.book = book;
-  }
 
   public Review() {
   }
+  public Review(int id, String comment, int mark,int book) {
+    this.id = id;
+    this.comment = comment;
+    this.mark = mark;
+    this.book = book;
+  }
+
 
   public String getComment() {
     return comment;
@@ -32,13 +32,12 @@ public class Review {
   public void setMark(int mark) {
     this.mark = mark;
   }
-
-  public User getAuthor() {
-    return author;
+  public int getId() {
+    return id;
   }
 
-  public void setAuthor(User author) {
-    this.author = author;
+  public void setId(int id) {
+    this.id = id;
   }
 
   public int getbook() {
@@ -51,9 +50,9 @@ public class Review {
   @Override
   public String toString() {
     return "Review{" +
+        "id=" + id + '\'' +
         "comment='" + comment + '\'' +
         ", mark=" + mark +
-        ", author=" + author +
         ", book=" + book +
         '}';
   }

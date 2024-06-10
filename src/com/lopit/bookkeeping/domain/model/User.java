@@ -1,15 +1,28 @@
-package com.lopit.bookkeeping.domain;
+package com.lopit.bookkeeping.domain.model;
+
 public class User {
+
+  private int userId;
   private String username; // Ім'я користувача
   private String password; // Пароль користувача
   private String email; // Електронна пошта користувача
-  private int phoneNumber; // Номер телефону користувача
+  private String phoneNumber; // Номер телефону користувача
   private String role; // Роль користувача (наприклад, "Бібліотекар" або "Читач")
 
   // Конструктор за замовчуванням
   public User() {
   }
-  public User(String username, String password, String email, int phoneNumber, String role) {
+
+  public User(int userId, String username, String password, String email, String phoneNumber, String role) {
+    this.userId = userId;
+    this.username = username;
+    this.password = password;
+    this.email = email;
+    this.phoneNumber = phoneNumber;
+    this.role = role;
+  }
+
+  public User(String username, String password, String email, String phoneNumber, String role) {
     this.username = username;
     this.password = password;
     this.email = email;
@@ -18,6 +31,13 @@ public class User {
   }
 
   // Методи доступу до полів
+  public int getUserId() {
+    return userId;
+  }
+
+  public void setUserId(int userId) {
+    this.userId = userId;
+  }
 
   public String getUsername() {
     return username;
@@ -43,11 +63,11 @@ public class User {
     this.email = email;
   }
 
-  public int getPhoneNumber() {
+  public String getPhoneNumber() {
     return phoneNumber;
   }
 
-  public void setPhoneNumber(int phoneNumber) {
+  public void setPhoneNumber(String phoneNumber) {
     this.phoneNumber = phoneNumber;
   }
 
@@ -58,10 +78,12 @@ public class User {
   public void setRole(String role) {
     this.role = role;
   }
+
   @Override
   public String toString() {
     return "User{" +
-        "username='" + username + '\'' +
+        "userId=" + userId +
+        ", username='" + username + '\'' +
         ", phoneNumber='" + phoneNumber + '\'' +
         ", password='" + password + '\'' +
         ", role='" + role + '\'' +

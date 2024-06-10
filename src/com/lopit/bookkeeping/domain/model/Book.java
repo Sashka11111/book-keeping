@@ -1,10 +1,8 @@
-package com.lopit.bookkeeping.domain;
-
-import java.util.UUID;
+package com.lopit.bookkeeping.domain.model;
 
 public class Book {
 
-  private String id;
+  private int id;
   private String title;
   private String author;
   private String category;
@@ -17,10 +15,10 @@ public class Book {
     this.category = category;
     this.yearPublished = yearPublished;
   }
-  public String getId(){
+  public int getId(){
     return id;
   }
-  public void setId(String id){
+  public void setId(int id){
     this.id = id;
   }
   public String getTitle() {

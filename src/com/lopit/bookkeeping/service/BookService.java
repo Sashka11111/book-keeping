@@ -2,78 +2,82 @@ package com.lopit.bookkeeping.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import com.liamtseva.cookbook.model.Recipes;
-import com.liamtseva.cookbook.model.ValidationInput;
+import com.lopit.bookkeeping.domain.model.Book;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
-public class RecipesService {
+public class BookService {
 
-  private static final String RECIPES_FILE_PATH = "Data/recipes.json";
-  private static List<Recipes> recipess;
+  private static final String BOOK_FILE_PATH = "Data/books.json";
+  private static List<Book> books;
 
+  // Метод для відображення всіх книг
   public static void main(String[] args) {
-    recipess = JsonDataReader.modelDataJsonReader(RECIPES_FILE_PATH, Recipes[].class);
-    displayRecipes(recipess);
+    books = JsonDataReader.modelDataJsonReader(BOOK_FILE_PATH, Book[].class);
+    displayBooks(books);
   }
 
-  public static void displayRecipes(List<Recipes> recipesList) {
-    for (Recipes recipe : recipesList) {
-      System.out.println("ID рецепту: " + recipe.getbook());
-      System.out.println("Інгредієнти: " + recipe.getIngredient());
-      System.out.println("Назва: " + recipe.getName());
-      System.out.println("Категорія: " + recipe.getCategory());
-      System.out.println("Інструкція: " + recipe.getInstruction());
-      System.out.println("Час готування: " + recipe.getCookingTime());
-      System.out.println(""); // Для розділення між записами
+  public static void displayBooks(List<Book> bookList) {
+    if (bookList.isEmpty()) {
+      System.out.println("Список книг порожній.");
+    } else {
+      System.out.println("Список книг:");
+      for (Book book : bookList) {
+        System.out.println("ID книги: " + book.getId());
+        System.out.println("Назва: " + book.getTitle());
+        System.out.println("Автор: " + book.getAuthor());
+        System.out.println("Рік видання: " + book.getYearPublished());
+        System.out.println("Категорія: " + book.getCategory());
+        System.out.println(); // Для розділення між записами
+      }
     }
   }
 
-  public static void addRecipe() {
+  public static void addBook() {
     Scanner scanner = new Scanner(System.in);
-    List<Recipes> recipes = JsonDataReader.modelDataJsonReader(RECIPES_FILE_PATH, Recipes[].class);
+    books = JsonDataReader.modelDataJsonReader(BOOK_FILE_PATH, Book[].class);
 
-    // Запитати користувача про дані нового рецепту
-    System.out.println("Додавання нового рецепту:");
+    // Знайти максимальний ID книги
+    int maxBookId = books.stream()
+        .mapToInt(Book::getId)
+        .max()
+        .orElse(0);
 
-    System.out.println("Введіть назву рецепту:");
-    String name = scanner.nextLine();
+    // Новий ID книги буде на одиницю більше за максимальний
+    int newBookId = maxBookId + 1;
 
-    System.out.println("Введіть категорію рецепту:");
+    System.out.println("Додавання нової книги:");
+
+    System.out.println("Введіть назву книги:");
+    String title = scanner.nextLine();
+
+    System.out.println("Введіть автора книги:");
+    String author = scanner.nextLine();
+
+    System.out.println("Введіть рік видання:");
+    int yearPublished = scanner.nextInt();
+    scanner.nextLine(); // Споживаємо залишок рядка
+
+    System.out.println("Введіть категорію книги:");
     String category = scanner.nextLine();
 
-    System.out.println("Введіть інгредієнти рецепту:");
-    String ingredients = scanner.nextLine();
+    Book newBook = new Book();
+    newBook.setId(newBookId); // Встановлюємо новий ID книги
+    newBook.setTitle(title);
+    newBook.setAuthor(author);
+    newBook.setYearPublished(yearPublished);
+    newBook.setCategory(category);
+    books.add(newBook);
 
-    System.out.println("Введіть інструкцію для приготування рецепту:");
-    String instruction = scanner.nextLine();
-
-    System.out.println("Введіть час приготування рецепту (у хвилинах):");
-    int cookingTime = ValidationInput.getValidIntInput(scanner);
-
-    Recipes newRecipe = new Recipes();
-    newRecipe.setbook(
-        recipes.size() + 1); // Або використайте інший спосіб генерації унікального ідентифікатора
-    newRecipe.setCategory(category);
-    newRecipe.setName(name);
-    newRecipe.setIngredient(ingredients);
-    newRecipe.setInstruction(instruction);
-    newRecipe.setCookingTime(cookingTime);
-
-// Додати новий рецепт до списку рецептів
-    recipes.add(newRecipe);
-
-    // Зберегти оновлені дані у файлі JSON
     try {
       ObjectMapper objectMapper = new ObjectMapper();
       objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-      objectMapper.writeValue(new File(RECIPES_FILE_PATH), recipes);
-      System.out.println("Новий рецепт додано успішно.");
+      objectMapper.writeValue(new File(BOOK_FILE_PATH), books);
+      System.out.println("Нову книгу додано успішно.");
     } catch (IOException e) {
-      System.out.println("Помилка при додаванні нового рецепту: " + e.getMessage());
+      System.out.println("Помилка при додаванні нової книги: " + e.getMessage());
     }
   }
-
 }

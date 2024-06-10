@@ -1,0 +1,15 @@
+[ {
+  "userId" : 1,
+  "username" : "librarian",
+  "password" : "librarian",
+  "email" : "librarian@gmail.com",
+  "phoneNumber" : "+380968893566",
+  "role" : "Бібліотекар"
+}, {
+  "userId" : 2,
+  "username" : "sofa",
+  "password" : "sofa",
+  "email" : "sofa@gmail.com",
+  "phoneNumber" : "+3806775035150",
+  "role" : "Читач"
+} ]
