@@ -1,8 +1,0 @@
-
-‚
-java:S1118":Add a private constructor to hide the implicit public one.(”­Ùşÿÿÿÿ8‡³–ìÿ1J$221a2a0f-0736-4369-8bdf-df4f3cce6406
-r	java:S106&"+Replace this use of System.out by a logger.(‹ˆŞûÿÿÿÿ8Œ³–ìÿ1J$0fa4217b-6c8c-41ca-ac85-0af6688ef20d
-m	java:S1069"+Replace this use of System.out by a logger.(…ãæí8³–ìÿ1J$a00ff8a9-187e-4248-87a1-f83f77c0968e
-
-java:S6353B"<Use concise character class syntax '\\d' instead of '[0-9]'.(´ò³Ã8™ë–™€2J$e909f5f1-8e29-456e-bbf0-a76a27091b73
-m	java:S106E"+Replace this use of System.out by a logger.(¥ôˆ„8™ë–™€2J$aa8e04b5-2476-4e4a-a85a-2781d80146ec

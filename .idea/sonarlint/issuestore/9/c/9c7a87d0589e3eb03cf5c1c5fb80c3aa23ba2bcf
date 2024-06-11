@@ -1,12 +1,2 @@
 
-	java:S112A"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8×¨§ëÿ1J$acb450c5-1d1b-4559-af22-41967b981697
-‚
-java:S1118":Add a private constructor to hide the implicit public one.(ÇÎûÖşÿÿÿÿ8ƒš„™€2J$3882b09a-52a4-450e-ac5f-4a6b44007df6
-r	java:S106"+Replace this use of System.out by a logger.(ƒÈÀøÿÿÿÿ8ÊÎÿ˜€2J$ff825067-9188-479b-8aa0-05418f26b788
-r	java:S106 "+Replace this use of System.out by a logger.(ÎéÛşÿÿÿÿ8‰š„™€2J$d20360b6-0d7e-4359-bbd4-70eb920ab091
-m	java:S106$"+Replace this use of System.out by a logger.(ƒâ«¾8‰š„™€2J$7718a127-d3ec-482f-8f1b-daedc2397b03
-m	java:S106&"+Replace this use of System.out by a logger.(Ïüó8‰š„™€2J$fb29028c-ea65-45dc-8140-76a494eea973
-m	java:S106("+Replace this use of System.out by a logger.(ñÎş’8Šš„™€2J$2d802a1e-461f-41af-a3e6-2a7ca451d8ad
-L	java:S106="+Replace this use of System.out by a logger.(©°á×úÿÿÿÿ8Ù÷¡™€2
-
-java:S1128"HRemove this unused import 'com.lopit.bookkeeping.domain.model.Category'.(÷åğ—ùÿÿÿÿ8Œ»›™€2J$2911a4f6-8425-408c-bc4b-f2baa63d561f
+	java:S112@"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8×¨§ëÿ1J$dc30e277-e307-4555-80d2-9f40d1052b8e

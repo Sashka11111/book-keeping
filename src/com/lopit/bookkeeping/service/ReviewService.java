@@ -6,7 +6,6 @@ import com.lopit.bookkeeping.domain.model.Review;
 import com.lopit.bookkeeping.domain.validation.ValidationInput;
 import java.io.File;
 import java.io.IOException;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -72,63 +71,6 @@ public class ReviewService {
     }
   }
 
-  public static void editReview(int reviewId) {
-    Scanner scanner = new Scanner(System.in);
-
-    for (Review review : reviews) {
-      if (review.getId() == reviewId) {
-        System.out.println("Editing review with ID: " + reviewId);
-        System.out.println("Enter new mark (1 to 5):");
-        int newMark = ValidationInput.getValidIntInput(scanner);
-        System.out.println("Enter new comment:");
-        String newComment = scanner.nextLine();
-
-        // Update review properties
-        review.setMark(newMark);
-        review.setComment(newComment);
-
-        // Save updated reviews to JSON file
-        saveReviewsToJson();
-
-        System.out.println("Review updated successfully.");
-        return;
-      }
-    }
-
-    System.out.println("Review not found with ID: " + reviewId);
-  }
-
-  public static void deleteReview(int reviewId) {
-    Iterator<Review> iterator = reviews.iterator();
-    boolean found = false;
-
-    while (iterator.hasNext()) {
-      Review review = iterator.next();
-      if (review.getId() == reviewId) {
-        iterator.remove();
-        found = true;
-        break;
-      }
-    }
-
-    if (found) {
-      // Save updated reviews to JSON file
-      saveReviewsToJson();
-      System.out.println("Review deleted successfully.");
-    } else {
-      System.out.println("Review not found with ID: " + reviewId);
-    }
-  }
-
-  private static void saveReviewsToJson() {
-    try {
-      ObjectMapper objectMapper = new ObjectMapper();
-      objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-      objectMapper.writeValue(new File(REVIEWS_FILE_PATH), reviews);
-    } catch (IOException e) {
-      System.out.println("Error saving reviews to JSON file: " + e.getMessage());
-    }
-  }
   // Логіка для генерації унікального ідентифікатора для нового відгуку, що починається з 1 і збільшується на 1 з кожним новим відгуком
   private static int generateUniqueId() {
     // Ініціалізуємо локальну змінну, що буде зберігати наступне значення унікального ідентифікатора
@@ -144,5 +86,4 @@ public class ReviewService {
 
     return nextId; // Повертаємо наступне унікальне значення ідентифікатора
   }
-
 }

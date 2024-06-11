@@ -1,9 +1,5 @@
 
-‚
-java:S1118":Add a private constructor to hide the implicit public one.(Ø‡ÜÛüÿÿÿÿ8ğõ¸Š€2J$f5cce095-1b01-449b-838d-fff9698a4f97
 o
 java:S3011",This accessibility update should be removed.(˜ÂÓ˜8©¹Š€2J$6a0a6c57-69a9-4798-b4eb-d2cac7ad4e1b
 
 java:S6201"FReplace this instanceof check and cast with 'instanceof String string'(èåúşÿÿÿÿ8óõ¸Š€2J$19af9272-8156-413b-abce-1698027a5d50
-m	java:S106"+Replace this use of System.out by a logger.(¬ˆ­–8öõ¸Š€2J$a1ea2f45-0c75-4965-93ff-f4ba9e640378
-r	java:S106#"+Replace this use of System.out by a logger.(‚é€Şûÿÿÿÿ8öõ¸Š€2J$00097c1b-6c2a-44c9-928a-22d240914af7

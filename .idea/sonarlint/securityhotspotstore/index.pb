@@ -24,8 +24,6 @@ d
 d
 4src/com/lopit/bookkeeping/service/SearchService.java,7\2\72b4a02f81230978d534e5b3db69efacffe2a5cb
 b
-2src/com/lopit/bookkeeping/service/UserService.java,2\8\287654bedfc38a5a434c2408d317f1ac3784d602
-b
 2src/com/lopit/bookkeeping/service/EditService.java,9\e\9e352f18219644d477f182a7c36f54e74bfb2b19
 `
 0src/com/lopit/bookkeeping/domain/model/User.java,6\e\6e333732026b18437cc05bb8412b532a75805347

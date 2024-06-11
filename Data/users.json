@@ -8,7 +8,7 @@
 }, {
   "userId" : 2,
   "username" : "sofa",
-  "password" : "sofa",
+  "password" : "sofa123",
   "email" : "sofa@gmail.com",
   "phoneNumber" : "+3806775035150",
   "role" : "Читач"

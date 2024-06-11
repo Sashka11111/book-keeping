@@ -8,40 +8,6 @@ import java.util.Scanner;
 public class ValidationInput {
 
   /**
-   * Перевіряє, чи всі введені значення є числовими.
-   *
-   * @param inputs Масив вхідних рядків.
-   * @return true, якщо всі введення є числовими, інакше false.
-   */
-  public static boolean checkNumericInput(String[] inputs) {
-    for (String input : inputs) {
-      if (!input.trim().matches("-?\\d+(\\.\\d+)?")) {
-        return false;
-      }
-    }
-    return true;
-  }
-
-  /**
-   * Запитує у користувача правильне числове значення типу double.
-   *
-   * @param scanner Об'єкт Scanner для зчитування вводу користувача.
-   * @return Правильне числове значення типу double, введене користувачем.
-   */
-  public static double getValidDoubleInput(Scanner scanner) {
-    double input;
-    while (true) {
-      try {
-        input = Double.parseDouble(scanner.nextLine().trim());
-        break; // Правильний ввід, виходимо з циклу
-      } catch (NumberFormatException e) {
-        System.out.println("Неправильний формат. Будь ласка, введіть числове значення:");
-      }
-    }
-    return input;
-  }
-
-  /**
    * Запитує у користувача правильне числове значення типу int.
    *
    * @param scanner Об'єкт Scanner для зчитування вводу користувача.
@@ -71,5 +37,4 @@ public class ValidationInput {
     }
     return input;
   }
-
 }

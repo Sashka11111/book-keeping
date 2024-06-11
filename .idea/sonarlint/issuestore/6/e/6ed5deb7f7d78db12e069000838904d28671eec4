@@ -9,51 +9,13 @@ j
 java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8åÍä˜€2J$7275edb5-7207-40d6-ad83-c1f5f39e3670
 Ä
 java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¸§Ó8äÙ¯˜€2J$4817c191-5f91-4f75-8a46-7a464e910a17
-`
-java:S1118"Hide this public constructor.(¸§Ó8çÙ¯˜€2J$2fe2a81b-1dec-43f5-8f57-f4d08664a8dc
 ”
 java:S3776"RRefactor this method to reduce its Cognitive Complexity from 34 to the 15 allowed.(øÉ“88éÙ¯˜€2J$21af8bf5-d849-446f-a65b-9f3a63d436cc
-r	java:S106"+Replace this use of System.out by a logger.(¡µæ‡üÿÿÿÿ8íÙ¯˜€2J$04adc452-ec91-4c57-b5b8-6ee8226f4c3b
-r	java:S106"+Replace this use of System.out by a logger.(ÇèÂ£üÿÿÿÿ8íÙ¯˜€2J$31cfb48c-1fcb-497b-8ea1-3ddc233ac4fa
-l	java:S106"+Replace this use of System.out by a logger.(ìÍµ=8íÙ¯˜€2J$fdb974bd-2947-4ae9-a2d8-be0f7bee21c4
-r	java:S106$"+Replace this use of System.out by a logger.(çÌ„‹úÿÿÿÿ8ïÙ¯˜€2J$d7011edc-63cf-4593-a8c4-4e7d8c95ce2c
-m	java:S106("+Replace this use of System.out by a logger.(œ¸Å8ïÙ¯˜€2J$54989b75-3d8d-4925-b934-e4a88034d217
-r	java:S1061"+Replace this use of System.out by a logger.(¡µæ‡üÿÿÿÿ8ïÙ¯˜€2J$38863348-c003-426d-9fe8-a7147abd2bb2
-r	java:S1062"+Replace this use of System.out by a logger.(ÇèÂ£üÿÿÿÿ8ïÙ¯˜€2J$089e2037-4161-4482-b135-731426b2fea1
 z
 java:S61264"2Replace this String concatenation with Text block.(ıÎ»öüÿÿÿÿ8ğÙ¯˜€2J$df2909ed-18ea-40b7-b82d-a6eed2c1a54b
-r	java:S106;"+Replace this use of System.out by a logger.(×ÜóÅüÿÿÿÿ8ñÙ¯˜€2J$c82c872f-05c3-4e99-b6d0-0e868cf06ed3
-r	java:S106<"+Replace this use of System.out by a logger.(ËñÜçùÿÿÿÿ8ñÙ¯˜€2J$1689803f-fe12-4f87-929f-795936c5c2f4
-m	java:S106="+Replace this use of System.out by a logger.(°²ŞÔ8ñÙ¯˜€2J$3e3fcbfc-c0c0-451e-b415-9fc0139e06a0
-m	java:S106>"+Replace this use of System.out by a logger.(™‚š»8ñÙ¯˜€2J$9ccb15bd-5687-40b4-a2a9-310d2e57b4ad
-r	java:S106A"+Replace this use of System.out by a logger.(×¢ğ”şÿÿÿÿ8óÙ¯˜€2J$1b18cbe5-dd63-40f1-b46c-97cfdc664be0
-l	java:S106B"+Replace this use of System.out by a logger.(Ó¶…p8óÙ¯˜€2J$be7d1557-3727-42da-952b-a3d69ff29c1b
-m	java:S106C"+Replace this use of System.out by a logger.(Îı—è8óÙ¯˜€2J$68a0b99e-6777-4b60-8a7c-118c7e0762ed
-m	java:S106G"+Replace this use of System.out by a logger.(Õš8óÙ¯˜€2J$0f3534dc-4e93-4e13-8b8f-2f2e89fd5e46
-m	java:S106r"+Replace this use of System.out by a logger.(œ¸Å8—Æº˜€2J$7335f337-3f9e-4024-ae94-809d1b8374d8
-r	java:S106y"+Replace this use of System.out by a logger.(–‹ÃŸÿÿÿÿÿ8˜Æº˜€2J$763ed77e-08a2-4576-ad3e-abc0d60c8d50
-m	java:S106z"+Replace this use of System.out by a logger.(×ñ¢³8˜Æº˜€2J$c018908c-c0ce-490d-a8a9-38861a2aec44
-m	java:S106{"+Replace this use of System.out by a logger.(ÔˆÉÆ8˜Æº˜€2J$3bc0288a-4843-474f-afd4-921219dd0198
-l	java:S106|"+Replace this use of System.out by a logger.(éô¬b8˜Æº˜€2J$b4ff5e8f-b2ab-4c42-8611-593c76c8b8fd
-l	java:S106}"+Replace this use of System.out by a logger.(ã½‘8˜Æº˜€2J$ee8ad44a-ad3a-459b-8267-7dfbc27f5518
-n	java:S106‘"+Replace this use of System.out by a logger.(œ¸Å8™Æº˜€2J$651e4955-bf0c-4027-b280-8186e265d04f
 Â
 java:S1130–"yRemove the declaration of thrown exception 'java.lang.IllegalAccessException', as it cannot be thrown from method's body.(ãô…óúÿÿÿÿ8±«Ş˜€2J$351fb526-9759-4df3-953f-3a5aa774bd5d
-n	java:S106—"+Replace this use of System.out by a logger.(·‹ã 8šÆº˜€2J$32a43823-ed8a-4c8d-b6ad-7dd9d409e7a3
-s	java:S106˜"+Replace this use of System.out by a logger.(³Ä‰Óüÿÿÿÿ8šÆº˜€2J$ec51cb23-8d31-46cb-a3ac-5363f8106892
-s	java:S106™"+Replace this use of System.out by a logger.(×…“°üÿÿÿÿ8šÆº˜€2J$6d5b69a2-1b69-4b9d-a4d6-bc7dc6369d1e
-n	java:S106§"+Replace this use of System.out by a logger.(œ¸Å8œÆº˜€2J$32dbb6f0-63e5-4def-9691-3dcba7abcc2b
 ½
 java:S1130¬"yRemove the declaration of thrown exception 'java.lang.IllegalAccessException', as it cannot be thrown from method's body.(Û‹Á¬8¶÷Ÿ™€2J$a3141267-9a8d-4d9a-8ffc-fbdc006d9eea
-n	java:S106­"+Replace this use of System.out by a logger.(Ûˆ€‚8¬•à˜€2J$42dfcd24-d0b2-489a-98cd-05f390ff90be
-n	java:S106®"+Replace this use of System.out by a logger.(ÙÄİ™8¬•à˜€2J$ce26c5eb-7685-49e7-9b6a-771ddc30e178
-s	java:S106¯"+Replace this use of System.out by a logger.(×…“°üÿÿÿÿ8¬•à˜€2J$b9a5c2cc-69bb-4cc8-9c74-2386586bea95
-n	java:S106½"+Replace this use of System.out by a logger.(œ¸Å8­•à˜€2J$33771257-35ff-43c5-84e9-027441fea989
 Â
 java:S1130Á"yRemove the declaration of thrown exception 'java.lang.IllegalAccessException', as it cannot be thrown from method's body.(½‡•øüÿÿÿÿ8©¸ª™€2J$f98f0478-648a-4212-a321-f05d08178704
-n	java:S106Â"+Replace this use of System.out by a logger.(ºõİ8Ï›ª™€2J$d8df18f1-8101-4f2e-a735-d64c7e8ecd59
-s	java:S106Ã"+Replace this use of System.out by a logger.(€×ƒÌüÿÿÿÿ8Ï›ª™€2J$bb018c08-a160-4dbd-be22-93133ab68d2c
-s	java:S106Ä"+Replace this use of System.out by a logger.(Œîµıüÿÿÿÿ8Ï›ª™€2J$3ac4c80e-238e-44a5-b28d-a47eecb5c2dc
-s	java:S106Å"+Replace this use of System.out by a logger.(ÌæÃÚÿÿÿÿÿ8Ï›ª™€2J$a6038f89-a0ce-42d6-8aed-ff8763a97b61
-m	java:S106Æ"+Replace this use of System.out by a logger.(ã½‘8Ğ›ª™€2J$92166ab4-19ad-4687-83d5-af6604a7aebd
-n	java:S106Ú"+Replace this use of System.out by a logger.(œ¸Å8Ğ›ª™€2J$11f925e2-7d32-4ca8-a510-662bd0a22142

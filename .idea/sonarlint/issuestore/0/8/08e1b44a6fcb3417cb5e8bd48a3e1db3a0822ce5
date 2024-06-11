@@ -1,26 +1,21 @@
 
 
-java:S1104"ZMake librariansList a static final constant or non-public and provide accessors if needed.(’¯”8‘íÕ‘ÿ1J$6b2bba6c-96c8-456b-a380-8a80901ae752
+java:S1104"ZMake librariansList a static final constant or non-public and provide accessors if needed.(’¯”8‘íÕ‘ÿ1J$8883d58c-fba5-45e6-bed3-8de5fb4b2c2e
 Ÿ
-java:S1104	"WMake readersList a static final constant or non-public and provide accessors if needed.(²Öºóşÿÿÿÿ8‘íÕ‘ÿ1J$44c5673a-aea2-4e7d-828a-3b4e2ce70bcb
-“
+java:S1104	"WMake readersList a static final constant or non-public and provide accessors if needed.(²Öºóşÿÿÿÿ8‘íÕ‘ÿ1J$6691891d-e937-44c5-9f2d-9804218dda7c
+Ÿ
 java:S1104
-"QMake users a static final constant or non-public and provide accessors if needed.(‡°‹8‘íÕ‘ÿ1J$da5451dc-35ec-4b90-9eba-39a0009ac07a
-Ÿ
-java:S1104"WMake currentUser a static final constant or non-public and provide accessors if needed.(˜ˆí€úÿÿÿÿ8‘íÕ‘ÿ1J$20164eec-f494-4de5-be32-527c93f95e2a
+"WMake currentUser a static final constant or non-public and provide accessors if needed.(˜ˆí€úÿÿÿÿ8‘íÕ‘ÿ1J$a6c2e4b2-b81b-4da0-99d4-799d05894f94
 w
-java:S1444"4Make this "public static librariansList" field final(’¯”8’íÕ‘ÿ1J$0a765345-b9aa-44de-ba84-e548fc2ae4d0
+java:S1444"4Make this "public static librariansList" field final(’¯”8’íÕ‘ÿ1J$1be9aeee-5d6c-41f2-b67c-8ca3e74df488
 y
-java:S1444	"1Make this "public static readersList" field final(²Öºóşÿÿÿÿ8’íÕ‘ÿ1J$9b33d41d-7822-4237-b936-997f6465e1c7
-m
+java:S1444	"1Make this "public static readersList" field final(²Öºóşÿÿÿÿ8’íÕ‘ÿ1J$07edcb90-2634-44f6-aa14-db57a9669dde
+y
 java:S1444
-"+Make this "public static users" field final(‡°‹8’íÕ‘ÿ1J$fc4dbe69-880d-492d-a694-0880993dd600
-y
-java:S1444"1Make this "public static currentUser" field final(˜ˆí€úÿÿÿÿ8’íÕ‘ÿ1J$23d4ab3a-6395-4c04-8465-a93e8976ca68
+"1Make this "public static currentUser" field final(˜ˆí€úÿÿÿÿ8’íÕ‘ÿ1J$25a965c3-9b2c-412e-9a19-1ba1403c59ec
 `
-java:S2386"Make this member "protected".(’¯”8½¥¬ìÿ1J$d4d62455-9f63-4b2e-8b4f-c7f4da264c3f
+java:S2386"Make this member "protected".(’¯”8½¥¬ìÿ1J$5781414c-549d-4a37-8537-9eb9e36521a3
 e
-java:S2386	"Make this member "protected".(²Öºóşÿÿÿÿ8½¥¬ìÿ1J$8e28d3c6-fd10-4b50-ab6f-1b46db1308a5
+java:S2386	"Make this member "protected".(²Öºóşÿÿÿÿ8½¥¬ìÿ1J$f91615ea-a77a-4730-8850-b5f6410fbc69
 u
-java:S6126"2Replace this String concatenation with Text block.(Ğâé8 íÕ‘ÿ1J$96b5c0cf-18c2-43e3-be89-9c78b57aec6b
-r	java:S106#"+Replace this use of System.out by a logger.(×ÜóÅüÿÿÿÿ8¡íÕ‘ÿ1J$469c53e3-3537-4bf3-b1e9-dd694bd19f4b
+java:S6126"2Replace this String concatenation with Text block.(Ğâé8 íÕ‘ÿ1J$51050255-33dd-4191-9f64-0f7f37ce534d

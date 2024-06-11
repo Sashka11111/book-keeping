@@ -1,7 +1,6 @@
 package com.lopit.bookkeeping.service;
 
 import com.lopit.bookkeeping.domain.model.Book;
-import com.lopit.bookkeeping.domain.validation.ValidationInput;
 import java.util.List;
 import java.util.Scanner;
 

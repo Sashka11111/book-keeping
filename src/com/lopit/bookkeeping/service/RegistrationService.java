@@ -1,7 +1,6 @@
 package com.lopit.bookkeeping.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.lopit.bookkeeping.domain.model.Category;
 import com.lopit.bookkeeping.domain.validation.ValidationInput;
 import com.lopit.bookkeeping.presentation.Application;
 import com.lopit.bookkeeping.domain.model.User;
@@ -84,7 +83,6 @@ public class RegistrationService {
       objectMapper.writerWithDefaultPrettyPrinter().writeValue(file, users);
     } catch (IOException e) {
       e.printStackTrace();
-      // Обробка помилок під час операцій з файлами
     }
   }
 }

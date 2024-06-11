@@ -4,7 +4,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.lopit.bookkeeping.domain.model.Book;
 import com.lopit.bookkeeping.domain.model.Category;
-import com.lopit.bookkeeping.domain.model.Review;
 import com.lopit.bookkeeping.domain.validation.ValidationInput;
 import java.io.File;
 import java.io.IOException;
@@ -15,7 +14,6 @@ public class EditService {
 
   private static final String BOOK_FILE_PATH = "Data/books.json";
   private static final String CATEGORY_FILE_PATH = "Data/categories.json";
-  private static final String REVIEWS_FILE_PATH = "Data/reviews.json";
 
   public static void editBook() {
     Scanner scanner = new Scanner(System.in);
