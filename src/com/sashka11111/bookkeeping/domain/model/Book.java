@@ -1,4 +1,4 @@
-package com.lopit.bookkeeping.domain.model;
+package com.sashka11111.bookkeeping.domain.model;
 
 public class Book {
 

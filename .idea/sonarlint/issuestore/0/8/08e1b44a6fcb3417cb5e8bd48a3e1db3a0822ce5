@@ -1,21 +1,21 @@
 
 
-java:S1104"ZMake librariansList a static final constant or non-public and provide accessors if needed.(’¯”8‘íÕ‘ÿ1J$8883d58c-fba5-45e6-bed3-8de5fb4b2c2e
+java:S1104"ZMake librariansList a static final constant or non-public and provide accessors if needed.(’¯”8‘íÕ‘ÿ1J$ce20bf86-e990-4e14-bb97-f4fb10defed9
 Ÿ
-java:S1104	"WMake readersList a static final constant or non-public and provide accessors if needed.(²Öºóşÿÿÿÿ8‘íÕ‘ÿ1J$6691891d-e937-44c5-9f2d-9804218dda7c
+java:S1104	"WMake readersList a static final constant or non-public and provide accessors if needed.(²Öºóşÿÿÿÿ8‘íÕ‘ÿ1J$6b52fb32-875d-4885-9b61-f9da184269b3
 Ÿ
 java:S1104
-"WMake currentUser a static final constant or non-public and provide accessors if needed.(˜ˆí€úÿÿÿÿ8‘íÕ‘ÿ1J$a6c2e4b2-b81b-4da0-99d4-799d05894f94
+"WMake currentUser a static final constant or non-public and provide accessors if needed.(˜ˆí€úÿÿÿÿ8‘íÕ‘ÿ1J$5bacc863-138d-4391-9a99-f360081aa5a7
 w
-java:S1444"4Make this "public static librariansList" field final(’¯”8’íÕ‘ÿ1J$1be9aeee-5d6c-41f2-b67c-8ca3e74df488
+java:S1444"4Make this "public static librariansList" field final(’¯”8’íÕ‘ÿ1J$25ef1b32-b9ef-4d8f-bf13-946c7c1a93b8
 y
-java:S1444	"1Make this "public static readersList" field final(²Öºóşÿÿÿÿ8’íÕ‘ÿ1J$07edcb90-2634-44f6-aa14-db57a9669dde
+java:S1444	"1Make this "public static readersList" field final(²Öºóşÿÿÿÿ8’íÕ‘ÿ1J$c5d9259c-e47d-4f91-adb8-69f22d629638
 y
 java:S1444
-"1Make this "public static currentUser" field final(˜ˆí€úÿÿÿÿ8’íÕ‘ÿ1J$25a965c3-9b2c-412e-9a19-1ba1403c59ec
+"1Make this "public static currentUser" field final(˜ˆí€úÿÿÿÿ8’íÕ‘ÿ1J$7e780499-da61-4c97-b362-ccca309ac6e3
 `
-java:S2386"Make this member "protected".(’¯”8½¥¬ìÿ1J$5781414c-549d-4a37-8537-9eb9e36521a3
+java:S2386"Make this member "protected".(’¯”8½¥¬ìÿ1J$3231d593-fd5f-42ab-9457-fd7aa8523fd4
 e
-java:S2386	"Make this member "protected".(²Öºóşÿÿÿÿ8½¥¬ìÿ1J$f91615ea-a77a-4730-8850-b5f6410fbc69
-u
-java:S6126"2Replace this String concatenation with Text block.(Ğâé8 íÕ‘ÿ1J$51050255-33dd-4191-9f64-0f7f37ce534d
+java:S2386	"Make this member "protected".(²Öºóşÿÿÿÿ8½¥¬ìÿ1J$e4b35ce0-37d2-404a-98ba-94563b55d420
+z
+java:S6126"2Replace this String concatenation with Text block.(…§©£ùÿÿÿÿ8 íÕ‘ÿ1J$a638b16d-27d2-4f91-a522-fddf5a6ddf5c

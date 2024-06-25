@@ -9,36 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72bd2b6a-857f-4083-b1cb-ffae791f70ac" name="Changes" comment="Added CRUD for reader and librarian">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/0391e3dce2eb46843b7f016146e52ea467e22c3a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/0391e3dce2eb46843b7f016146e52ea467e22c3a" afterDir="false" />
+    <list default="true" id="72bd2b6a-857f-4083-b1cb-ffae791f70ac" name="Changes" comment="Cleaned the code">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/08e1b44a6fcb3417cb5e8bd48a3e1db3a0822ce5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/08e1b44a6fcb3417cb5e8bd48a3e1db3a0822ce5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/1135456f9b1364137f1bac30e862ecbcd64f0849" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/1135456f9b1364137f1bac30e862ecbcd64f0849" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/a/1a65c3b91afcc14cb5b1ddacc49b73751c6fe505" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/a/1a65c3b91afcc14cb5b1ddacc49b73751c6fe505" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/287654bedfc38a5a434c2408d317f1ac3784d602" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/287654bedfc38a5a434c2408d317f1ac3784d602" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6e6a4ccce9c44c98600a7abc762fa77efe8286a9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6e6a4ccce9c44c98600a7abc762fa77efe8286a9" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6ed5deb7f7d78db12e069000838904d28671eec4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6ed5deb7f7d78db12e069000838904d28671eec4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/2/72b4a02f81230978d534e5b3db69efacffe2a5cb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/2/72b4a02f81230978d534e5b3db69efacffe2a5cb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/3/73d8a7fd7b9672865d603ce340e162d9af58d350" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/3/73d8a7fd7b9672865d603ce340e162d9af58d350" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/75ee658a620edf9d2d5a952a414bd820bcb1743b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/75ee658a620edf9d2d5a952a414bd820bcb1743b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/0/8095c5f23ad441fc28eed99942da185de6074799" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/0/8095c5f23ad441fc28eed99942da185de6074799" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91cf3e4f54ad6d490f48c9523ddb048500fb5caf" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91cf3e4f54ad6d490f48c9523ddb048500fb5caf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c7a87d0589e3eb03cf5c1c5fb80c3aa23ba2bcf" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c7a87d0589e3eb03cf5c1c5fb80c3aa23ba2bcf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/e/9e352f18219644d477f182a7c36f54e74bfb2b19" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/e/9e352f18219644d477f182a7c36f54e74bfb2b19" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/7/a755eafb82f574ffc630487780de4aea106b2691" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/7/a755eafb82f574ffc630487780de4aea106b2691" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a85f699a14dd12c4e0b7c73d80283cdc57fdeccd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a85f699a14dd12c4e0b7c73d80283cdc57fdeccd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/b/ebf6c2479047dc9915be682e2287f9be1a8e3771" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/b/ebf6c2479047dc9915be682e2287f9be1a8e3771" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/Data/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lopit/bookkeeping/domain/validation/ValidationInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lopit/bookkeeping/domain/validation/ValidationInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lopit/bookkeeping/presentation/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lopit/bookkeeping/presentation/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lopit/bookkeeping/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lopit/bookkeeping/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lopit/bookkeeping/service/EditService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lopit/bookkeeping/service/EditService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lopit/bookkeeping/service/RegistrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lopit/bookkeeping/service/RegistrationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lopit/bookkeeping/service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lopit/bookkeeping/service/ReviewService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lopit/bookkeeping/service/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lopit/bookkeeping/service/SearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lopit/bookkeeping/service/UserService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +67,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -121,6 +102,15 @@
       <workItem from="1718037374088" duration="4339000" />
       <workItem from="1718044902467" duration="413000" />
       <workItem from="1718097804496" duration="2233000" />
+      <workItem from="1718103346217" duration="1083000" />
+      <workItem from="1718126025580" duration="624000" />
+      <workItem from="1718867530603" duration="716000" />
+      <workItem from="1718875143249" duration="3654000" />
+      <workItem from="1718973127826" duration="3404000" />
+      <workItem from="1719152274245" duration="279000" />
+      <workItem from="1719155249578" duration="565000" />
+      <workItem from="1719158319703" duration="1988000" />
+      <workItem from="1719223070054" duration="580000" />
     </task>
     <task id="LOCAL-00001" summary="Added CRUD for reader and librarian">
       <option name="closed" value="true" />
@@ -130,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718044956042</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Cleaned the code">
+      <option name="closed" value="true" />
+      <created>1718103426539</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718103426539</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +136,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added CRUD for reader and librarian" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added CRUD for reader and librarian" />
+    <MESSAGE value="Cleaned the code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned the code" />
   </component>
 </project>

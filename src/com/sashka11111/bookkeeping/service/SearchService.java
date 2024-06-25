@@ -1,6 +1,6 @@
-package com.lopit.bookkeeping.service;
+package com.sashka11111.bookkeeping.service;
 
-import com.lopit.bookkeeping.domain.model.Book;
+import com.sashka11111.bookkeeping.domain.model.Book;
 import java.util.List;
 import java.util.Scanner;
 

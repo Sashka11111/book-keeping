@@ -7,9 +7,9 @@
   "role" : "Бібліотекар"
 }, {
   "userId" : 2,
-  "username" : "sofa",
-  "password" : "sofa123",
-  "email" : "sofa@gmail.com",
-  "phoneNumber" : "+3806775035150",
+  "username" : "sofia",
+  "password" : "123456",
+  "email" : "sofialopit@gmail.com",
+  "phoneNumber" : "+09799856356",
   "role" : "Читач"
 } ]

@@ -1,14 +1,14 @@
-package com.lopit.bookkeeping.presentation;
+package com.sashka11111.bookkeeping.presentation;
 
-import com.lopit.bookkeeping.service.AuthorizationService;
-import com.lopit.bookkeeping.service.BookService;
-import com.lopit.bookkeeping.service.CategoryService;
-import com.lopit.bookkeeping.service.DeleteService;
-import com.lopit.bookkeeping.service.EditService;
-import com.lopit.bookkeeping.service.RegistrationService;
-import com.lopit.bookkeeping.service.ReviewService;
-import com.lopit.bookkeeping.service.SearchService;
-import com.lopit.bookkeeping.domain.validation.UserInputHandler;
+import com.sashka11111.bookkeeping.service.AuthorizationService;
+import com.sashka11111.bookkeeping.service.BookService;
+import com.sashka11111.bookkeeping.service.CategoryService;
+import com.sashka11111.bookkeeping.service.DeleteService;
+import com.sashka11111.bookkeeping.service.EditService;
+import com.sashka11111.bookkeeping.service.RegistrationService;
+import com.sashka11111.bookkeeping.service.ReviewService;
+import com.sashka11111.bookkeeping.service.SearchService;
+import com.sashka11111.bookkeeping.domain.validation.UserInputHandler;
 
 public class Menu {
 

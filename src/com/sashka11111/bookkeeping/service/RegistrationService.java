@@ -1,10 +1,10 @@
-package com.lopit.bookkeeping.service;
+package com.sashka11111.bookkeeping.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.lopit.bookkeeping.domain.validation.ValidationInput;
-import com.lopit.bookkeeping.presentation.Application;
-import com.lopit.bookkeeping.domain.model.User;
-import com.lopit.bookkeeping.presentation.Menu;
+import com.sashka11111.bookkeeping.domain.validation.ValidationInput;
+import com.sashka11111.bookkeeping.presentation.Application;
+import com.sashka11111.bookkeeping.domain.model.User;
+import com.sashka11111.bookkeeping.presentation.Menu;
 
 import java.io.File;
 import java.io.IOException;

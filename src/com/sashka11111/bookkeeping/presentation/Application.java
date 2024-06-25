@@ -1,6 +1,6 @@
-package com.lopit.bookkeeping.presentation;
+package com.sashka11111.bookkeeping.presentation;
 
-import com.lopit.bookkeeping.domain.model.User;
+import com.sashka11111.bookkeeping.domain.model.User;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,11 +21,11 @@ public class Application {
   }
 
   public static void main(String[] args) throws IllegalAccessException {
-    String art = "───▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄───\n"
-        + "───█▒▒░░░░░░░░░▒▒█───\n"
-        + "────█░░█░░░░░█░░█────\n"
-        + "─▄▄──█░░░▀█▀░░░█──▄▄─\n"
-        + "█░░█─▀▄░░░░░░░▄▀─█░░█\n"
+    String art = "   ▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄  \n"
+        + "   █▒▒░░░░░░░░░▒▒█  \n"
+        + "    █░░█░░░░░█░░█    \n"
+        + " ▄▄  █░░░▀█▀░░░█  ▄▄ \n"
+        + "█░░█ ▀▄░░░░░░░▄▀ █░░█\n"
         + "█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█\n"
         + "█░░╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗░░█\n"
         + "█░░║║║╠─║─║─║║║║║╠─░░█\n"

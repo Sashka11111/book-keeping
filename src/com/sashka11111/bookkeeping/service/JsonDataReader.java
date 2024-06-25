@@ -1,4 +1,4 @@
-package com.lopit.bookkeeping.service;
+package com.sashka11111.bookkeeping.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;

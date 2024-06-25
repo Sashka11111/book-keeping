@@ -1,4 +1,4 @@
-package com.lopit.bookkeeping.domain.validation;
+package com.sashka11111.bookkeeping.domain.validation;
 
 import java.util.Scanner;
 

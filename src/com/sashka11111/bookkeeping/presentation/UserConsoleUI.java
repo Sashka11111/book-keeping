@@ -1,7 +1,7 @@
-package com.lopit.bookkeeping.presentation;
+package com.sashka11111.bookkeeping.presentation;
 
 
-import com.lopit.bookkeeping.domain.model.User;
+import com.sashka11111.bookkeeping.domain.model.User;
 import java.lang.reflect.Field;
 
 public class UserConsoleUI {

@@ -1,8 +1,8 @@
-package com.lopit.bookkeeping.service;
+package com.sashka11111.bookkeeping.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import com.lopit.bookkeeping.domain.model.Book;
+import com.sashka11111.bookkeeping.domain.model.Book;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
