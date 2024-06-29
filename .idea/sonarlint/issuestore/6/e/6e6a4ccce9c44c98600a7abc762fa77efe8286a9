@@ -1,21 +1,0 @@
-
-¡
-java:S4165"`Remove this useless assignment; "id" already holds the assigned value along all execution paths.(£©èÚþÿÿÿÿJ$b2f8a549-220f-47bc-a767-0d6df333456e
-Ÿ
-java:S4165"cRemove this useless assignment; "title" already holds the assigned value along all execution paths.(¦žÓ×J$9f2ae470-c47f-4677-9572-485625ec90d8
-¬
-java:S4165"kRemove this useless assignment; "yearPublished" already holds the assigned value along all execution paths.(¡»’ìÿÿÿÿÿJ$75db3b9c-9a59-42ab-93d6-44973da9222b
-§
-java:S4165"fRemove this useless assignment; "category" already holds the assigned value along all execution paths.(¢ïº£ýÿÿÿÿJ$c62441c1-880a-40e1-a97f-edb7bd48bc11
-Ÿ
-java:S4165"dRemove this useless assignment; "author" already holds the assigned value along all execution paths.(‹·³(J$e73f8f18-77b0-4565-8d68-ee66036f834d
-j
-java:S1656"/Remove or correct this useless self-assignment.(‹·³(J$28b40230-2bc9-4964-856a-870c517f8890
-p
-java:S1656"/Remove or correct this useless self-assignment.(£©èÚþÿÿÿÿJ$4301d464-e9a2-448d-bfb4-439258fb4c62
-p
-java:S1656"/Remove or correct this useless self-assignment.(¢ïº£ýÿÿÿÿJ$a513f359-db30-4d14-97fd-d272d9f302cb
-p
-java:S1656"/Remove or correct this useless self-assignment.(¡»’ìÿÿÿÿÿJ$757b9c7e-8d73-4929-9217-7d9bf3301bb4
-k
-java:S1656"/Remove or correct this useless self-assignment.(¦žÓ×J$5ae77bb5-620d-43a5-b6b7-ed759ea462e3

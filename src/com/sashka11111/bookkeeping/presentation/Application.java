@@ -13,7 +13,7 @@ public class Application {
     // Додати бібліотекаря
     librariansList.add(new User("librarian", "librarian123", "librarian@example.com", "+380968893566","Бібліотекар"));
     // Додати читача
-    readersList.add(new User("sofia", "123456", "sofia@gmail.com", "+380968893599","Читач"));
+    readersList.add(new User("sashka11111", "123456", "sashka11111@gmail.com", "+380968893599","Читач"));
   }
 
   public static void runner() throws IllegalAccessException {

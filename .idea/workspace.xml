@@ -9,16 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72bd2b6a-857f-4083-b1cb-ffae791f70ac" name="Changes" comment="Cleaned the code">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/08e1b44a6fcb3417cb5e8bd48a3e1db3a0822ce5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/08e1b44a6fcb3417cb5e8bd48a3e1db3a0822ce5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6e6a4ccce9c44c98600a7abc762fa77efe8286a9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6e6a4ccce9c44c98600a7abc762fa77efe8286a9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6ed5deb7f7d78db12e069000838904d28671eec4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6ed5deb7f7d78db12e069000838904d28671eec4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c7a87d0589e3eb03cf5c1c5fb80c3aa23ba2bcf" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c7a87d0589e3eb03cf5c1c5fb80c3aa23ba2bcf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a85f699a14dd12c4e0b7c73d80283cdc57fdeccd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a85f699a14dd12c4e0b7c73d80283cdc57fdeccd" afterDir="false" />
+    <list default="true" id="72bd2b6a-857f-4083-b1cb-ffae791f70ac" name="Changes" comment="Fixed the bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/Data/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lopit/bookkeeping/presentation/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lopit/bookkeeping/presentation/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +103,7 @@
       <workItem from="1719155249578" duration="565000" />
       <workItem from="1719158319703" duration="1988000" />
       <workItem from="1719223070054" duration="580000" />
+      <workItem from="1719293570892" duration="424000" />
     </task>
     <task id="LOCAL-00001" summary="Added CRUD for reader and librarian">
       <option name="closed" value="true" />
@@ -128,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718103426539</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed the bugs">
+      <option name="closed" value="true" />
+      <created>1719293709721</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719293709721</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +138,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added CRUD for reader and librarian" />
     <MESSAGE value="Cleaned the code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned the code" />
+    <MESSAGE value="Fixed the bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the bugs" />
   </component>
 </project>
